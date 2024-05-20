@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Clientes</h2>
+        <form class="formulario">
+            <fieldset>
+                <legend>Información Personal</legend>
+
+                <label for="cedula">C.C.</label>
+                <input type="text" placeholder="Tu C.C." id="cedula">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" placeholder="Tu Nombre" id="nombre">
+
+                <label for="ciudad">Ciudad</label>
+                <input type="text" placeholder="ciudad" id="ciudad">
+
+                <label for="direccion">Dirección</label>
+                <input type="text" placeholder="Tu Direccion" id="direccion">
+
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Tu Email" id="email">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" placeholder="Tu Teléfono" id="telefono">
+                
+            </fieldset>
+            
+
+            <fieldset>
+                <legend>Información Sobre la Entidad</legend>
+
+                <label for="nit">NIT</label>
+                <input type="text" placeholder="Nit" id="nit">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" placeholder="Nombre" id="nombre">
+
+                <label for="ciudad">Ciudad</label>
+                <input type="text" placeholder="ciudad" id="ciudad">
+
+                <label for="direccion">Dirección</label>
+                <input type="text" placeholder="Direccion" id="direccion">
+
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Email" id="email">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" placeholder="Teléfono" id="telefono">
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Filtrar</legend>
+
+                <label for="opciones">Año:</label>
+                <select id="opciones">
+                    <option value="" disabled selected>-- Seleccione --</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                </select>
+
+                <label for="opciones">Mes:</label>
+                <select id="opciones">
+                    <option value="" disabled selected>-- Seleccione --</option>
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                </select>
+
+                <label for="opciones"># Factura:</label>
+                <select id="opciones">
+                    <option value="" disabled selected>-- Seleccione --</option>
+                    <option value="001">001</option>
+                    <option value="002">002</option>
+                    <option value="003">003</option>
+                    <option value="004">004</option>
+                </select>
+
+                <label for="descuento">% Descuento</label>
+                <input type="number" placeholder="Aplique descuento" id="descuento">
+
+            </fieldset>
+            
+
+            <!-- <div class="table-container">
+                <table class="facturas">
+                    <thead>
+                        <tr>
+                            <th colspan="4">N° Factura</th>
+                            <th>546597</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>0</td>
+                        </tr> 
+                        <tr>
+                            <th>Código</th>
+                            <th>Descripción</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1546</td>
+                            <td>Papa</td>
+                            <td>25</td>
+                            <td>$150.00</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>2478</td>
+                            <td>Arroz</td>
+                            <td>04</td>
+                            <td>$200.00</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>6558</td>
+                            <td>Leche</td>
+                            <td>36</td>
+                            <td>$150.00</td>
+                            <td>246</td>
+                        </tr>
+                        <tr>
+                            <td>0003</td>
+                            <td>Huevo</td>
+                            <td>30</td>
+                            <td>600</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>0</td>
+                        </tr>                        
+                        <tr>
+                            <td colspan="4">Total</td>
+                            <td>$350.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>  -->
+
+            <div class="buttons">
+                <input type="submit" value="nuevo" class="boton-verde">
+                <input type="submit" value="editar" class="boton-verde">
+                <input type="submit" value="eliminar" class="boton-verde">             
+                <input type="submit" value="Guardar" class="boton-verde">
+            </div>
+            <div class="buttons">
+                <input type="submit" value="atrás" class="boton-verde">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

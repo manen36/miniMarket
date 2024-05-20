@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Productos</h2>
+        <form class="table-container">
+                       
+            <fieldset>
+                <legend>Producto</legend>            
+
+                <label for="codigo">Digite código:</label>
+                <input type="text" placeholder="codigo" id="nombre">
+
+                <label for="disponible">Disponible</label>
+                <input type="number" placeholder="99" id="disponible">
+
+                <label for="fecha">Fecha</label>
+                <input type="date" placeholder="fecha" id="fecha">
+
+
+                
+            </fieldset>
+
+            <label for="opciones">Filtrar</label>
+                <select id="opciones">
+                    <option value="" disabled selected>-- Seleccione --</option>
+                    <option value="001">Tipo</option>
+                    <option value="002">Fecha</option>
+                    <option value="003">Vencimiento</option>
+                    <option value="004">Distribuidor</option>
+                    <option value="004">IVA</option>
+                </select>
+            
+            <div class="table-container">
+                <table class="facturas">
+                    <thead>
+                        <tr>
+                            <th colspan="4">N° Factura</th>
+                            <th>546597</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>0</td>
+                        </tr> 
+                        <tr>
+                            <th>Código</th>
+                            <th>Descripción</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1546</td>
+                            <td>Papa</td>
+                            <td>25</td>
+                            <td>$150.00</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>2478</td>
+                            <td>Arroz</td>
+                            <td>04</td>
+                            <td>$200.00</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>6558</td>
+                            <td>Leche</td>
+                            <td>36</td>
+                            <td>$150.00</td>
+                            <td>246</td>
+                        </tr>
+                        <tr>
+                            <td>0003</td>
+                            <td>Huevo</td>
+                            <td>30</td>
+                            <td>600</td>
+                            <td>0</td>
+                        </tr>                                          
+                        <tr>
+                            <td>1546</td>
+                            <td>Papa</td>
+                            <td>25</td>
+                            <td>$150.00</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>2478</td>
+                            <td>Arroz</td>
+                            <td>04</td>
+                            <td>$200.00</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>6558</td>
+                            <td>Leche</td>
+                            <td>36</td>
+                            <td>$150.00</td>
+                            <td>246</td>
+                        </tr>
+                        <tr>
+                            <td>0003</td>
+                            <td>Huevo</td>
+                            <td>30</td>
+                            <td>600</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>0</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div> 
+
+            <div class="buttons">
+                <input type="submit" value="agregar" class="boton-verde">
+                <input type="submit" value="editar" class="boton-verde">
+                <input type="submit" value="eliminar" class="boton-verde">             
+                <input type="submit" value="Guardar" class="boton-verde">
+            </div>
+            <div class="buttons">                
+                <input type="submit" value="imprimir" class="boton-verde">
+                <input type="submit" value="atrás" class="boton-verde">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

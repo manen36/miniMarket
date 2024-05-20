@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- <div class="container_logo">
+        <img src="logo.png" alt="Logo de la empresa">
+    </div>
+    <div class="table-container">
+        <table class="facturas">
+            <thead>
+                <tr>
+                    <th>ID Factura</th>
+                    <th>Fecha</th>
+                    <th>Cliente</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2023-05-01</td>
+                    <td>Juan Pérez</td>
+                    <td>$150.00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2023-05-02</td>
+                    <td>María Gómez</td>
+                    <td>$200.00</td>
+                </tr>
+                <!-- Agrega más filas según sea necesario -->
+            <!-- </tbody>
+        </table>
+    </div> --> 
+
+    <div class="container">
+        <h2>Facturas</h2>
+        <form class="table-container">
+                       
+            <fieldset>
+                <legend>Información Sobre Factura</legend>
+
+                <label for="opciones">Tipo de Documento</label>
+                <select id="opciones">
+                    <option value="" disabled selected>-- Seleccione --</option>
+                    <option value="C.C">C.C</option>
+                    <option value="nit">nit</option>
+                    <option value="código">N° Factura</option>
+                </select>
+                <input type="text" placeholder="digite" id="digite">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" placeholder="Nombre" id="nombre">
+
+                <label for="ciudad">Ciudad</label>
+                <input type="text" placeholder="ciudad" id="ciudad">
+
+                <label for="direccion">Dirección</label>
+                <input type="text" placeholder="Direccion" id="direccion">
+
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Email" id="email">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" placeholder="Teléfono" id="telefono">
+                
+            </fieldset>
+
+            <div class="buttons">
+                <input type="submit" value="Nueva Factura" class="boton-verde">
+            </div>
+            
+            <div class="table-container">
+                <table class="facturas">
+                    <thead>
+                        <tr>
+                            <th colspan="4">N° Factura</th>
+                            <th>546597</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>0</td>
+                        </tr> 
+                        <tr>
+                            <th>Código</th>
+                            <th>Descripción</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1546</td>
+                            <td>Papa</td>
+                            <td>25</td>
+                            <td>$150.00</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>2478</td>
+                            <td>Arroz</td>
+                            <td>04</td>
+                            <td>$200.00</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>6558</td>
+                            <td>Leche</td>
+                            <td>36</td>
+                            <td>$150.00</td>
+                            <td>246</td>
+                        </tr>
+                        <tr>
+                            <td>0003</td>
+                            <td>Huevo</td>
+                            <td>30</td>
+                            <td>600</td>
+                            <td>0</td>
+                        </tr>                                          
+                        <tr>
+                            <td>1546</td>
+                            <td>Papa</td>
+                            <td>25</td>
+                            <td>$150.00</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>2478</td>
+                            <td>Arroz</td>
+                            <td>04</td>
+                            <td>$200.00</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>6558</td>
+                            <td>Leche</td>
+                            <td>36</td>
+                            <td>$150.00</td>
+                            <td>246</td>
+                        </tr>
+                        <tr>
+                            <td>0003</td>
+                            <td>Huevo</td>
+                            <td>30</td>
+                            <td>600</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">IVA</td>
+                            <td>$19%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">Total</td>
+                            <td>$350.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> 
+
+            <div class="buttons">
+                <input type="submit" value="agregar" class="boton-verde">
+                <input type="submit" value="editar" class="boton-verde">
+                <input type="submit" value="eliminar" class="boton-verde">             
+                <input type="submit" value="Guardar" class="boton-verde">
+            </div>
+            <div class="buttons">                
+                <input type="submit" value="imprimir" class="boton-verde">
+                <input type="submit" value="atrás" class="boton-verde">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
