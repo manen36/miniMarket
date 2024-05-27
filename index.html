@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GA5-220501095-AA1-EV03</title>
+    <link rel="preload" href="normalize.css" as="style">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +14,7 @@
         <div class="contenedor_logo">
             <img src="logo.png" alt="Logo de la empresa">
         </div>
-        <form action="/login" method="post">
+        <form action="menuPrincipal.html" method="get">
             <h2>Iniciar Sesión</h2>
             <label for="rol">Seleccionar rol:</label>
             <select name="rol" id="rol">
@@ -21,6 +23,7 @@
             </select>
             <label for="password">Contraseña:</label>
             <input type="password" id="password" name="password" required>
+            <!-- <a href="menuPrincipal.html" class="menu-button">Inicio Sesión</a> -->
             <input type="submit" value="Iniciar Sesión">
         </form>
     </div>
