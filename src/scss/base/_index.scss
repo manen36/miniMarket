@@ -1,0 +1,144 @@
+@forward 'normalize';
+@forward 'globales';
+@use 'variables' as v;
+@use 'mixins' as m;
+
+body {
+    margin: 7rem;
+    padding: 0;
+    background-color: v.$blancoBg;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+// .container_login {
+//     background-color: v.$blanco;
+//     padding: 5rem;
+//     border-radius: 8px;
+//     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+// }
+input[type="text"],
+input[type="password"],
+select,
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: v.$verde;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: v.$verdeHover;
+}
+
+.logo {
+    max-width: 100px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.menu-button {
+    display: block;
+    background-color: v.$verde;
+    width: 20rem;
+    height: 8rem;
+    color: #fff;
+    text-align: center;
+    line-height: 8rem;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: v.$verdeHover;
+    }
+}
+
+.formulario fieldset {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid v.$bordes;
+    border-radius: 4px;
+}
+.form-group select {
+    height: 40px;
+}
+.form-actions {
+    margin-top: 20px;
+    display: flex;
+}
+.form-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-actions button.primary {
+    background-color: #007bff;
+    color: #fff;
+}
+.form-actions button.cancel {
+    background-color: #ccc;
+    color: #000;
+}
+
+.buttons{
+    display:flex
+}
+
+.buttons input[type="submit"] {
+    margin-right: 10px; /* Ajusta este valor según el espacio que desees entre los botones */
+}
+
+.buttons input[type="submit"]:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último botón */
+}
+
+/* Facturación */
+.table-container {
+    margin-bottom: 50px;
+}
+.table-container fieldset {
+    margin-bottom: 2rem;
+}
+
+.facturas {
+    width:100%;
+}
+.facturas th, .facturas td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.facturas th {
+    background-color: #f2f2f2;
+}
+
+.facturas tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
